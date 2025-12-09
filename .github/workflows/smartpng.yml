@@ -1,4 +1,4 @@
-name: Run Bot (scheduled)
+name: Run Bot Send Png to Telegram (scheduled)
 
 on:
   schedule:
@@ -18,7 +18,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install --no-cache-dir -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Run
         run: python smartmoneyaspng.py
